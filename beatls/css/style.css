@@ -1,0 +1,333 @@
+/* Typography */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #555;
+}
+
+.title {
+    position: relative;
+    color: #0056B3;
+  }
+
+  
+.underline {
+    position: absolute;
+    height: 2px;
+    width: 10%;
+    background-color: #007bff;
+    bottom: -4px;
+    left: 45%;
+}
+
+
+/* Back to Top */
+.ScrollToTop {
+    background: #2B2E4A;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 8px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+.ScrollToTop i {
+    font-size: 25px;
+    color: #fff;
+}
+/* Typography */
+
+
+
+
+/* Banner Section */
+
+.banner {
+    position: relative;
+    background-image: url("../img/woman-using-her-laptop-comfortably-at-home-free-photo-1080x720.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Banner Section */
+
+
+
+
+
+/* Main Menu Section */
+
+.main-menu .nav-link {
+    color: #007bff!important;
+    padding: 5px;
+    transition: 0.4s ease;
+}
+
+
+.main-menu .nav-item:hover .nav-link {
+    color: #0056B3!important;
+    background-color: #EFEFEF;
+    transition: 0.4s ease;
+}
+
+
+.main-menu .nav-link.active {
+    color: #0056B3!important;
+  }
+
+
+/* Main Menu Section */
+
+
+
+
+
+/* Services Section */
+.services .box {
+    position: relative;
+    background-color: #f2f0f2;
+    z-index: -1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transform: scaleY(-2px);
+}
+
+.services .box-body {
+    min-height: 290px;
+    
+}
+
+.services .box-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.2s ease-in-out;
+}
+
+.services .box-body:hover {
+    transform: scaleY(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.services span {
+    position: absolute;
+    
+}
+
+.services .icon {
+    font-size: 22px;
+    border-radius: 50%;
+    outline: 2px solid #C8BFC8;
+    outline-offset: 2px;
+    color: #333;
+    background-color: #C8BFC8;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+/* Services Section */
+
+
+/* Portfolio Section */
+.portfolio .brandImg {
+    position: relative;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.portfolio .brandImg img {
+    min-height: 220px;
+    width: 500px;
+}
+
+.portfolio .BrandOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.65);
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+
+.portfolio .brandImg:hover .BrandOverlay {
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+.text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Portfolio Section  */
+
+
+/* Team Section */
+.team .teamMember {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.team .teamMember img {
+    height: 280px;
+    width: 550px;
+}
+
+.team .memberImg {
+    position: relative;
+}
+
+.team .teamMember .overlayIcon {
+    height: 280px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.team .teamMember:hover .overlayIcon {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.team .teamMember .overlayIcon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.team .teamMember .overlayIcon ul li {
+    margin: 30px 0;
+    display: block;
+    
+}
+
+.team .teamMember .overlayIcon ul li a {
+    padding: 6px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+/* Team Section */
+
+
+/* Testimonial Section */
+/* Owl Carousel */
+
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 270px;
+    
+}
+
+.testimonial .card {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+/* Testimonial Section */
+
+
+
+/* Footer Section */
+.footer {
+    background-color: #363537;
+}
+
+
+.footer .contactInfo .icon {
+    font-size: 18px;
+}
+
+.footer .importantLnk span {
+    width: 25px;
+}
+
+.footer .flickr-photos img {
+    height: 60px;
+    width: 90px;
+}
+
+
+
+
+
+/* Media Query  */
+
+@media screen and (max-width: 991px) {
+    .team .teamMember .overlayIcon {
+        opacity: 1;
+    }
+    
+    .footer .flickr-photos img {
+        height: 110px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #owl-demo .item img{
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #owl-demo .item img{
+        height: 310px;
+    }
+
+    
+    .footer .flickr-photos img {
+        height: 90px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+        
+    .footer .flickr-photos img {
+        height: 90px;
+        width: 120px;
+    }
+}
+
